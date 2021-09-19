@@ -1,0 +1,62 @@
+.themeMenu{
+    position: fixed;
+    right: -300px;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    padding: 20px;
+    z-index: 99;
+    background-color: var(--main-bg);
+    box-shadow: var(--box-shadow);
+    transition: right 0.5s var(--transition-cubic);
+}
+
+.themeMenu.active{
+    right: 0;
+}
+
+.themeMenuClose{
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+
+.themeMenuSelect{
+    margin-top: 40px;
+}
+
+.modeList{
+   margin-top: 20px;
+}
+
+.modeList > li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modeList > li ~ li {
+    margin-top: 10px;
+}
+
+.modeListColor{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.modeListColor > i {
+    transform: scale(0);
+    transition: transform .5s var;
+}
+
+.modeListColor.active > i {
+    transform: scale(1);
+}

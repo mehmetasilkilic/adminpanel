@@ -1,0 +1,52 @@
+.sidebar{
+    min-width: var(--sidebar-width);
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: var(--main-bg);
+    box-shadow: var(--box-shadow);
+}
+
+.headTitle{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: var(--main-color);
+    padding-left: 20px;
+}
+
+.sidebarItem{
+    padding: 0;
+}
+
+.sidebarItemInner{
+    padding: 15px 0 15px 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    transition: color .3s ease 0s;
+}
+
+.sidebarItemInner > i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.sidebarItemInner > span {
+    text-transform: capitalize;
+}
+
+.sidebarItemInner:hover{
+    color: var(--main-color);
+}
+
+.sidebarItemInner.active{
+    background-image: linear-gradient(
+        to right,
+        var(--main-color),
+        var(--second-color)
+    );
+    color: var(--txt-white);
+}
